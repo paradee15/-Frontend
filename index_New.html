@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@500&display=swap" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://kit.fontawesome.com/4e13e4dd44.js" crossorigin="anonymous"></script>
+<link type="text/css" rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!--topnav-->
+    <div class="topnav">
+  
+      
+        <a href="#" style="margin-top: 0; font-size: 30px;">LOGO</a>
+    <div class="menu">
+        <div class="form-outline"><i class="fas fa-search" style="font-size: 20px; margin-left: 5px;"></i>
+            <input type="search" id="search" placeholder="ค้นหา" aria-label="Search" >
+            <button class="button" >Sign In</button>
+            <button class="button" style="background-color: rgba(171, 169, 169, 0.843); text-align: right; border: none">Register</button>
+             
+      
+
+          </div>
+
+          <div class="form-typemovie">
+            <a href="#">หนังล่าสุด</a>
+            <a href="#">แอคชั่น</a>
+            <a href="#">ซีรี่ส์</a>
+            <a href="#">การ์ตูน</a>
+            <a href="#">อนิเมะ</a>
+            <a href="#">หนังไทย</a>
+            <a href="#">หนังฝรั่ง</a>
+    
+          </div>
+    </div>
+      
+    </div>
+<!--/topnav-->
+<!---slide-->
+
+
+
+<div class="row">
+    
+    <div class="container">
+
+
+<div class="card">
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext"><h1>Slide1</h1></div>
+              <img src="picture/w.png" style="width:100%">
+              
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext"><h1>Slide2</h1></div>
+              <img src="picture/w.png" style="width:100%">
+              
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext"><h1>Slide3</h1></div>
+              <img src="picture/w.png" style="width:100%">
+              
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+
+
+
+
+            function removeAds() {
+  var myobj = document.getElementById("remove-ads1");
+  myobj.remove();
+}
+function removeAds2() {
+  var myobj = document.getElementById("remove-ads2");
+  myobj.remove();
+}
+function removeAds3() {
+  var myobj = document.getElementById("remove-ads3");
+  myobj.remove();
+}
+            </script>
+
+
+
+</div>
+
+
+
+<!--ads-->
+
+<div class="card">
+
+ 
+    <div class="AdsOnPage">
+  
+      <div  class="img1ads imgads"><a href="#" >Ads</a></div>
+      <div class="img2ads imgads"  ><a href="#" >Ads</a></div>
+      
+  
+  
+    </div>
+    
+  </div>
+
+  
+ 
+
+<!--<aside style="position: relative; ">
+
+ลอย        
+    <div class="ads-left" id="remove-ads1"><h1 class = "textAds" style="margin-top: 5em;">Ads</h1>
+        <button class="ads-button ads-buttonL" onclick="removeAds()">
+            <i class="fas fa-times-circle"></i></button></div>
+
+    <div class="ads-right" id="remove-ads2"><h1 class = "textAds" style="margin-top: 5em;">Ads</h1>
+        <button class="ads-button ads-buttonR" onclick="removeAds2()">
+            <i class="fas fa-times-circle"></i></button></div>
+
+    <div class="ads-buttom" id="remove-ads3"><h1 class = "textAds"  style="margin-top: 1em; ">Ads</h1>
+        <button class="ads-button ads-buttonB" onclick="removeAds3()">
+            <i class="fas fa-times-circle"></i></button></div>
+ 
+</aside>--> 
+
+
+
+
+
+
+
+
+<!--/ads   filter: brightness(5);-->
+
+
+
+
+ <div class="card" style="height: 650px;">
+
+ <p style="text-align: center; font-size: 55px; margin: 0;">หมวดหมู่</p>
+
+ 
+    <div class="settablemovie">
+    <table style="width:100%">
+        <tr>
+          <td rowspan="2" ><img src="picture/spi.png" class="cover narrow" style="margin-top: -110px;">
+            <h1 style="position: relative; margin-top: -230px; color: aliceblue;"><a href="#">หนังล่าสุด</a></h1></td>
+
+          <td><img src="picture/action.png" class="cover narrow2"  style="margin-top: -2px;" ><h1 class = " text" ><a href="#">แอคชั่น</a></h1></td>		
+          <td><img src="picture/cartoon.png" class="cover narrow2"  style="margin-top: -2px;"><h1 class = " text"><a href="#">การ์ตูน</a></h1></td>
+          <td><img src="picture/eng.png"class="cover narrow2"   style="margin-top: -2px;"><h1 class = " text"><a href="#">หนังฝรั่ง</a></h1></td>
+          
+        </tr>
+
+
+        <tr>
+            <td><img src="picture/serie.png" class="cover narrow2" style="margin-top: 70px;"><h1 class = " text"><a href="#">ซีรี่ย์</a></h1></td>		
+            <td><img src="picture/anime.png"class="cover narrow2" style="margin-top: 70px;"><h1 class = " text"><a href="#">อนิเมะ</a></h1></td>
+            <td><img src="picture/thai.png"class="cover narrow2" style="margin-top: 70px;"><h1 class = " text"><a href="#">หนังไทย</a></h1></td>
+        </tr>
+       
+      </table>
+    </div>
+    
+  </div>
+  
+
+<aside >
+     
+    <div class="ads-asideleft" ><h1 class = "textAds" style="margin-top: 5em;">Ads</h1>
+</aside>
+
+<aside >
+    <div class="ads-asideleft2" >
+        <p class = "textAdstable" >ปีที่ฉาย</p>
+    <P class="YearOfmovie" ><a href="#" >2023</a></P><P class="YearOfmovie" ><a href="#" >2023</a></P>
+    <P class="YearOfmovie" ><a href="#" >2023</a></P><P class="YearOfmovie" ><a href="#" >2023</a></P>
+    <P class="YearOfmovie" ><a href="#" >2023</a></P><P class="YearOfmovie" ><a href="#" >2023</a></P>
+    <P class="YearOfmovie" ><a href="#" >2023</a></P><P class="YearOfmovie" ><a href="#" >2023</a></P>
+    <P class="YearOfmovie" ><a href="#" >2023</a></P><P class="YearOfmovie" ><a href="#" >2023</a></P>
+    <P class="YearOfmovie" ><a href="#" >2023</a></P><P class="YearOfmovie" ><a href="#" >2023</a></P>
+    <P class="YearOfmovie" ><a href="#" >2023</a></P><P class="YearOfmovie" ><a href="#" >2023</a></P>
+    <P class="YearOfmovie" ><a href="#" >2023</a></P><P class="YearOfmovie" ><a href="#" >2023</a></P>
+    <P class="YearOfmovie" ><a href="#" >2023</a></P><P class="YearOfmovie" ><a href="#" >2023</a></P>
+    <P class="YearOfmovie" ><a href="#" >2023</a></P><P class="YearOfmovie" ><a href="#" >2023</a></P>
+    <P class="YearOfmovie" ><a href="#" >2023</a></P><P class="YearOfmovie" ><a href="#" >2023</a></P>
+
+        <p class = "textAdstable" >หมวดหมู่</p>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> หมวดหมู่</a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> หนังซูม</a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> หนังฝรั่ง</a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> หนังไทย</a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> ซีรี่ส์</a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> การ์ตูน</a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> อนิเมะ</a></P>
+    
+    <p class = "textAdstable" >ประเภท</p>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i>Biography ชีวประวัติ </a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> Adventure ผจญภัย </a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> Action แอคชั่น </a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> Comedy ตลก </a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> History ประวัติศาสตร์ </a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> Horror สยองขวัญ </a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> Western ตะวันตก </a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> War สงคราม </a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> Thriller ระทึกขวัญ </a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> Sci-fi วิทยาศาสตร์ </a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> Romance โรแมนติก </a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> Mystery ลึกลับ </a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> Musical ดนตรี </a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> Fantasy แฟนตาซี </a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> Family ครอบครัว </a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> Drama ชีวิต </a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> Documentary สารคดี </a></P>
+    <P class="movieCatagory" ><a href="#" ><i class="fas fa-circle" style="font-size: small; align-content: center;"></i> Crime อาชญากรรม</a></P>
+
+  
+
+
+</aside>
+<aside>
+    <div class="ads-asideright" ><h1 class = "textAds" style="margin-top: 5em;">Ads</h1>
+</aside>
+<aside>
+    <div class="ads-asideright2" ><h1 class = "textAds" style="margin-top: 5em;">Ads</h1>
+
+</aside>
+
+
+<!--slide2-->
+
+
+    <div class="card">
+        <p style="text-align: center; font-size: 55px;margin: 0;">ค่ายหนัง</p>
+        
+
+
+          <div class="content-company" style="margin-top: 0;">
+      
+                <div class=" imgbgcompany1 fakeimg4 box-img-size-bgcompany" ><a href="#" >
+                    <img src="picture/logomarvel.png" class="size-img-company" > </a> </div>
+                <div class=" imgbgcompany2 fakeimg4 box-img-size-bgcompany" ><a href="#" >
+                    <img src="picture/logoDC.png" class="size-img-company"> </a></div>
+                
+                <div class="imgbgcompany3 fakeimg4 box-img-size-bgcompany" ><a href="#" >
+                    <img src="picture/logofox.jpg" class="size-img-company"> </a></div>
+                <div class="imgbgcompany4 fakeimg4 box-img-size-bgcompany" ><a href="#" >
+                    <img src="picture/paramount.jpg" class="size-img-company" > </a></div>
+    
+         </div>
+    </div> 
+
+<!---/slide2-->
+
+
+<!--content-->
+
+
+<div class="card" style="height: 1650px;">
+
+    <div class="form-menumovie" style="font-size: 30px;">
+        <a href="#" style="margin-left: 15px;">อัพเดตล่าสุด |</a>
+        <a href="#" style="margin-left: 30px;"> หนังเรียงตามปี |</a>
+        <a href="#" style="margin-left: 30px;"> TOP IMDM | </a>
+        <a href="#" style="margin-left: 30px;"> คนชอบมากที่สุด | </a>
+
+
+      </div>
+
+
+    <div class="settable">
+      <table style="width:100%;">
+        <tr >
+          <td  ><div class="content-newthing">
+
+
+            <div class="box box-size-newthing" >
+         
+                 <div class="movie1 fakeimg" style="height:500px;"></div>
+                 <img class=" positionbanner" src="picture/banner.png" ></a>
+                <img class=" positionscore" src="picture/score.png" ></a>
+         
+                 <div class="row-newthing" style="color: white; text-align: center; font-size: 50px;">
+                    <div class="column-newthing " style="background-color:rgb(0, 0, 0);width: 100%; height: 100%;">
+                        <p style=" word-wrap: break-word;"><a href="#">Spider-Man No Way Home <br>(2021) 
+                            สไปเดอร์แมน โน เวย์ โฮม</a></p>
+                        
+                      </div>
+                 </div>
+             </div></td>
+
+          <td><div class="content-newthing">
+
+
+            <div class="box box-size-newthing" >
+         
+                 <div class="movie2 fakeimg" style="height:400px;"></div>
+                 <img class=" positionbanner" src="picture/banner.png" ></a>
+                 <img class=" positionscore" src="picture/score.png" ></a>
+         
+                 <div class="row-newthing" style="color: white; text-align: center;">
+                     <div class="column-newthing " style="background-color:rgb(0, 0, 0);">
+                       <p ><a href="#">Eternals (2021) <br>
+                        ฮีโร่พลังเทพเจ้า (ซับไทย)</a></p>
+                     </div>  
+                 </div>
+             </div></td>	
+
+          <td><div class="content-newthing">
+
+
+            <div class="box box-size-newthing" >
+         
+                 <div class="movie3 fakeimg" style="height:400px;"></div>
+                 <img class=" positionbanner" src="picture/Gbanner.png" ></a>
+                 <img class=" positionscore" src="picture/score.png" ></a>
+
+                 <div class="row-newthing" style="color: white; text-align: center;">
+                     <div class="column-newthing " style="background-color:rgb(0, 0, 0);">
+                       <p ><a href="#">Sompoy (2021)<br> ส้มป่อย</a></p>
+                     </div>  
+                 </div>
+             </div></td>
+             
+          <td><div class="content-newthing">
+
+
+            <div class="box box-size-newthing" >
+         
+                 <div class="movie4 fakeimg" style="height:400px;"></div>
+                 <img class=" positionbanner" src="picture/banner.png" ></a>
+                 <img class=" positionscore" src="picture/score.png" ></a>
+
+                 <div class="row-newthing" style="color: white; text-align: center;">
+                     <div class="column-newthing " style="background-color:rgb(0, 0, 0);">
+                       <p ><a href="#">Dont Look Up (2021) (Netflix)</a></p>
+                     </div>  
+                 </div>
+             </div></td>
+          
+        </tr>
+
+
+        <tr>
+            <td><div class="content-newthing">
+
+
+                <div class="box box-size-newthing" >
+             
+                     <div class="movie5 fakeimg" style="height:400px;"></div>
+                        <img class=" positionbanner" src="picture/banner.png" ></a>
+                        <img class=" positionscore" src="picture/score.png" ></a>
+                     <div class="row-newthing" style="color: white; text-align: center;">
+                       
+                         <div class="column-newthing " style="background-color:rgb(0, 0, 0);">
+                           <p ><a href="#">The Matrix Resurrections <br>(2021) 
+                            เดอะ เมทริกซ์ <br>เรเซอเร็คชั่นส์</a></p>
+                         </div>  
+                     </div>
+                 </div></td></td>		
+            <td><div class="content-newthing">
+
+
+                <div class="box box-size-newthing" >
+             
+                     <div class="movie6 fakeimg" style="height:400px;"></div>
+                     <img class=" positionbanner" src="picture/banner.png" ></a>
+                     <img class=" positionscore" src="picture/score.png" ></a>
+    
+                     <div class="row-newthing" style="color: white; text-align: center;">
+                         <div class="column-newthing " style="background-color:rgb(0, 0, 0);">
+                           <p ><a href="#">Resident Evil <br>Welcome to 
+                            <br>Raccoon City (2021) ซับไทย</a></p>
+                         </div>  
+                     </div>
+                 </div></td></td>
+            <td><div class="content-newthing">
+
+
+                <div class="box box-size-newthing" >
+             
+                     <div class="movie7 fakeimg" style="height:400px;"></div>
+                     <img class=" positionbanner" src="picture/banner.png" ></a>
+                     <img class=" positionscore" src="picture/score.png" ></a>
+    
+                     <div class="row-newthing" style="color: white; text-align: center;">
+                         <div class="column-newthing " style="background-color:rgb(0, 0, 0);">
+                           <p ><a href="#">Venom <br>Let There Be Carnage 
+                            <br>(2021) เวน่อม 2</a></p>
+                         </div>  
+                     </div>
+                 </div></td></td>
+            <td><div class="content-newthing">
+
+
+                <div class="box box-size-newthing" >
+             
+                     <div class="movie8 fakeimg" style="height:400px;"></div>
+                     <img class=" positionbanner" src="picture/banner.png" ></a>
+                     <img class=" positionscore" src="picture/score.png" ></a>
+    
+                     <div class="row-newthing" style="color: white; text-align: center;">
+                         <div class="column-newthing " style="background-color:rgb(0, 0, 0);">
+                           <p ><a href="#">Wrath Of Man (2021)<br> 
+                            คนคลั่งแค้น ปล้นผ่านรก</a></p>
+                         </div>  
+                     </div>
+                 </div></td></td>	
+        </tr>
+
+
+        <tr>
+            <td><div class="content-newthing">
+
+
+                <div class="box box-size-newthing" >
+             
+                     <div class="movie9 fakeimg" style="height:400px;"></div>
+                     <img class=" positionscore" src="picture/score.png" ></a>
+
+                     <div class="row-newthing" style="color: white; text-align: center;">
+                         <div class="column-newthing " style="background-color:rgb(0, 0, 0);">
+                           <p ><a href="#">WandaVision (2021) <br>วันด้าวิสชั่น 
+                            <br>(Disney Series) 9 ตอน</a></p>
+                         </div>  
+                     </div>
+                 </div></td></td>		
+
+            <td><div class="content-newthing">
+
+
+                <div class="box box-size-newthing" >
+             
+                     <div class="movie10 fakeimg" style="height:400px;"></div>
+                    <img class=" positionscore" src="picture/score.png" ></a>
+
+                     <div class="row-newthing" style="color: white; text-align: center;">
+                         <div class="column-newthing " style="background-color:rgb(0, 0, 0);">
+                           <p ><a href="#">Loki (2021) <br>โลกิ Season 1</a></p>
+                         </div>  
+                     </div>
+                 </div></td></td>
+
+            <td><div class="content-newthing">
+
+
+                <div class="box box-size-newthing" >
+             
+                     <div class="movie11 fakeimg" style="height:400px;"></div>
+                     <img class=" positionscore" src="picture/score.png" ></a>
+
+                     <div class="row-newthing" style="color: white; text-align: center;">
+                         <div class="column-newthing " style="background-color:rgb(0, 0, 0);">
+                           <p ><a href="#">The Suicide Squad (2021)<br> 
+                            เดอะ ซุยไซด์ สควอด</a></p>
+                         </div>  
+                     </div>
+                 </div></td></td>
+
+
+            <td><div class="content-newthing">
+
+
+                <div class="box box-size-newthing" >
+             
+                     <div class="movie12 fakeimg" style="height:400px;"></div>
+                    <img class=" positionscore" src="picture/score.png" ></a>
+                     <div class="row-newthing" style="color: white; text-align: center;">
+                         <div class="column-newthing " style="background-color:rgb(0, 0, 0);">
+                           <p ><a href="#">What If (2021)</a></p>
+                         </div>  
+                     </div>
+                 </div></td></td>	
+        </tr>
+       
+      </table>
+
+    </div>
+
+      
+
+
+
+
+
+
+
+
+
+<div style="text-align: center; ">
+    <div class="pagination" >
+        <a href="#" style="margin-right: 10px; background-color: black; color: white; border:  #000000;">Prev</a>
+        <a class="active" href="#" style="margin-right: 10px;">1</a>
+        <a  href="#" style="margin-right: 10px;">2</a>
+        <a href="#" style="margin-right: 10px;">3</a>
+        <a href="#" style="margin-right: 10px;">4</a>
+        <a href="#" style="margin-right: 10px;">5</a>
+        <a href="#" style="margin-right: 10px;">6</a>
+        <a href="#" style="margin-right: 10px; background-color: black; color: white; border:  #000000;">Next</a>
+      </div>
+</div>
+    </div>
+
+   
+
+    
+      
+    
+       
+        
+
+
+
+
+
+
+</div> <!---/content
+
+
+asideMenu-->
+<aside style="position: relative; ">
+    <div class="ads-left" id="remove-ads1"><h1 class = "textAds" style="margin-top: 5em;">Ads</h1>
+        <button class="ads-button ads-buttonL" onclick="removeAds()">
+            <i class="fas fa-times-circle"></i></button></div>
+
+    <div class="ads-right" id="remove-ads2"><h1 class = "textAds" style="margin-top: 5em;">Ads</h1>
+        <button class="ads-button ads-buttonR" onclick="removeAds2()">
+            <i class="fas fa-times-circle"></i></button></div>
+
+    <div class="ads-buttom" id="remove-ads3"><h1 class = "textAds"  style="margin-top: 1em; ">Ads</h1>
+        <button class="ads-button ads-buttonB" onclick="removeAds3()">
+            <i class="fas fa-times-circle"></i></button></div>
+</aside>
+
+
+
+<!--/asidemenu-->
+
+
+
+
+
+
+</div> <!--/container-->
+
+</div><!--/row-->
+
+</body>
+</html>
